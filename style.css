@@ -1,0 +1,24 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.map {
+	height: 100vh;
+	background: url("Blank_US_Map.svg") center center no-repeat;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+header {
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	margin-top: -2em;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 300;
+}
