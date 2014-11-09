@@ -15,6 +15,7 @@ body {
 	z-index: -1;
 }
 
+
 section:nth-of-type(1) {
 	width: 100%;
 	height: 100vh;
@@ -86,6 +87,11 @@ section:nth-of-type(6) {
 	-o-background-size: contain;
 	background-size: contain;
 }
+
+.state{
+fill:f3f3f3;
+}
+
 
 .content {
 	display: table-cell;
