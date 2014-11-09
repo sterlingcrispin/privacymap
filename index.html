@@ -15,7 +15,7 @@
 
 <body>
     <div>
-        <header id="#">
+        <header id="#top">
             <h1><strong>The State of Privacy</strong><br>
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="jbcnn">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -96,8 +96,8 @@
 
 
         <section>
-            <div id="final" class="final">
-                <h2>Here’s what you can do, now.</h2>
+            <div class="final">
+                <h2 id="final" >Here’s what you can do, now.</h2>
                 <p>Help protect the privacy of yourself and the people you communicate with while also resisting bulk surveillance systems by following these steps.
                     <br/>
                     <br/> Remember: even if you feel you have nothing to hide, you have the right to be free from unreasonable search and seizure.
@@ -173,10 +173,11 @@
                     </ul>
 	
                     <b>Sources:</b>
-					<br/>
+										<br/>
 	                <a href="http://www.theatlantic.com/politics/archive/2014/10/congress-still-has-now-idea-how-much-the-nsa-spies-on-americans/382114/">Congress still has no idea how many Americans the NSA has spied on.</a>
 
-				</div>
+								</div>
+								
             </div>
         </section>
 
@@ -196,35 +197,42 @@
           $("#zero").waypoint(function(direction) {
               $("#downarrowlink").attr("href", "#one");
 							$("header h1").css("display", "inline-block");
+							$(".downarrow").css("display", "block");
           });
 
           $("#one").waypoint(function(direction) {
               $("#downarrowlink").attr("href", "#two");
 							$("header h1").css("display", "inline-block");
+							$(".downarrow").css("display", "block");
           });
 
           $("#two").waypoint(function(direction) {
               $("#downarrowlink").attr("href", "#three");
 							$("header h1").css("display", "inline-block");
+							$(".downarrow").css("display", "block");
           });
 
           $("#three").waypoint(function(direction) {
               $("#downarrowlink").attr("href", "#four");
 							$("header h1").css("display", "inline-block");
+							$(".downarrow").css("display", "block");
           });
 
           $("#four").waypoint(function(direction) {
               $("#downarrowlink").attr("href", "#five");
 							$("header h1").css("display", "inline-block");
+							$(".downarrow").css("display", "block");
           });
 					
           $("#five").waypoint(function(direction) {
               $("#downarrowlink").attr("href", "#final");
 							$("header h1").css("display", "inline-block");
+							$(".downarrow").css("display", "block");
           });
 					
 					$(".final").waypoint(function(direction) {
 						$("header h1").css("display", "none");
+						$(".downarrow").css("display", "none");
 					});
 					
       });
