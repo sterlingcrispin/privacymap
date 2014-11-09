@@ -2,59 +2,129 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Privacy Map</title>
+	<title>The State of Privacy</title>
 	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="style.css">
+	<!-- Animate.css wow -->
 	
-	<script language="javascript" type="text/javascript" src="script.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="/waypoints/waypoints.min.js"></script>
+	<link rel="stylesheet" href="animate.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 	<div>
-		<header>
-			<h1>Privacy Map</h1>
+		<header id="#">
+			<h1><strong>The State of Privacy</strong><br>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="jbcnn">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</h1>
 		</header>
 		
-		<section>
+		<section id="zero">
 			<div class="content">
-				<h2>Section 1</h2>
+				<h2>Your cell phone helps you keep in touch with friends and family, but it’s also a collection of your communications and personal information. Are you keeping yourself free from observation or disturbance from other people?</h2>
+					
+				<div class="wow fadeInUp"><h2><strong>Here are some things to consider:</strong></h2></div>
+				<div class="downarrow">
+					<a id="downarrowlink" href="#one">
+					<span><strong>Read More</strong></span><br>
+					<i class="fa fa-angle-double-down fa-2x"></i>
+					</a>
+				</div>
 			</div>
 		</section>
 		
-		<section>
+		<section id="one">
 			<div class="content">
-				<h2>Section 2</h2>
+				<div class="wow fadeInUp"><h2><strong>4.5 million smartphones were lost or stolen</strong> in the United States in 2013, or <strong>4% of all active smartphones.</strong><h2></div>
+				<div class="wow fadeInUp"><h2>That's equivalent to the populations of <strong>Colorado, Kansas, Nebraska, Wyoming, and Utah combined</strong> as compared to the United States.</h2></div>
 			</div>
 		</section>
 		
-		<section>
+		<section id="two">
 			<div class="content">
-				<h2>Section 3</h2>
+				<div class="wow fadeInUp"><h2><strong>21% of internet users have had an email or social networking account compromised or taken over</strong> by someone else without permission.</h2></div>
+				<div class="wow fadeInUp"><h2>Thats equivalent to the populations of <strong>Arizona, Nevada, Texas, Idaho, Montana, Oregon, Washington, Oklahoma, North Dakota, South Dakota, and Louisiana</strong> combined as compared to the United States.</h2></div>
 			</div>
 		</section>
 		
-		<section>
+		<section id="three">
 			<div class="content">
-				<h2>Section 4</h2>
+				<div class="wow fadeInUp"><h2><strong>34% of smartphone users have no active security measures</strong> like passwords or lock screens.</h2></div>
+				<div class="wow fadeInUp"><h2>That's equivalent to the populations of <strong>Florida, Mississippi, Georgia, and Alabama</strong> as compared to the United States.</h2></div>
 			</div>
 		</section>
 		
-		<section>
-			<div class="content">
-				<h2>Section 5</h2>
+		<section id="four">
+			<div class="content" id="5">
+				<div class="wow fadeInUp"><h2><strong>68% believe that current laws are not good enough</strong> in protecting the rights of internet users.
+<strong>Comparable to:</strong> population of U.S. with a smartphone.</h2></div>
 			</div>
 		</section>
 		
-		<section>
-			<div class="content">
-				<h2>Section 6</h2>
+		<section id="five">
+			<div class="content" id="6">
+				<div class="wow fadeInUp"><h2><strong>Congress still has no idea</strong> how many Americans have had their privacy compromised by the spying carried out by the NSA and their mass surveillance program.</h2>
+				
+				<a href="http://www.theatlantic.com/politics/archive/2014/10/congress-still-has-now-idea-how-much-the-nsa-spies-on-americans/382114/"><h2><strong>www.theatlantic.com/politics/archive/2014/10/congress-still-has-now-idea-how-much-the-nsa-spies-on-americans/382114/</strong>
+</h2></a></div>
 			</div>
 		</section>
 	</div>
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
+	<script src="waypoints/waypoints.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.0.2/wow.min.js"></script>
+	
+	<script>
+	 new WOW().init();
+	</script>
+	
+	<script>
+	$(function () {
+		$("#zero").waypoint(function(direction) {
+			$("#downarrowlink").attr("href", "#one");
+		});
+		
+		$("#one").waypoint(function(direction) {
+			$("#downarrowlink").attr("href", "#two");
+		});
+		
+		$("#two").waypoint(function(direction) {
+			$("#downarrowlink").attr("href", "#three");
+		});
+		
+		$("#three").waypoint(function(direction) {
+			$("#downarrowlink").attr("href", "#four");
+		});
+		
+		$("#four").waypoint(function(direction) {
+			$("#downarrowlink").attr("href", "#five");
+		});
+	});
+	</script>
+	
+	<script>
+	$('a[href*=#]:not([href=#])').click(function() {
+	   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+	       || location.hostname == this.hostname) {
+
+	       var target = $(this.hash);
+	       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	          if (target.length) {
+	            $('html,body').animate({
+	                scrollTop: target.offset().top
+	           }, 1000);
+	           return false;
+	       }
+	   }
+	});
+	</script>
 </body>
 </html>
