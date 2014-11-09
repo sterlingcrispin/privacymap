@@ -119,6 +119,9 @@ h3 {
 	margin: 0;
 }
 
+.statetext{
+	font-size:1.2em;
+}
 .final{
 	background-color:white;
 	opacity:0.8;
