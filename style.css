@@ -154,4 +154,8 @@ a:hover {
 	h2, h3 {
 		font-size: 1.5em !important;
 	}
+	
+	.phone,.twofactor{
+		width:100%;
+	}
 }
