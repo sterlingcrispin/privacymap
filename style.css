@@ -35,3 +35,21 @@ h1 {
 h3 {
 	margin: 0;
 }
+
+.final{
+	background-color:white;
+	opacity:0.8;
+	padding:10%;
+	height:100vh;
+}
+
+.phone,.twofactor{
+	text-align: left;
+	float:left;
+	margin-right:4%;
+	width:45%;
+}
+
+.passwords{
+	float:left;
+}
