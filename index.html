@@ -98,7 +98,7 @@
 
 
         <section>
-            <div class="final">
+            <div id="final" class="final">
                 <h2>Here’s what you can do, now.</h2>
                 <p>Help protect the privacy of yourself and the people you communicate with while also resisting bulk surveillance systems by following these steps.
                     <br/>
@@ -192,48 +192,58 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.0.2/wow.min.js"></script>
 
     <script>
-        new WOW().init();
-    </script>
+			new WOW().init();
+			
+      $(function() {
+          $("#zero").waypoint(function(direction) {
+              $("#downarrowlink").attr("href", "#one");
+							$("header h1").css("display", "inline-block");
+          });
 
-    <script>
-        $(function() {
-            $("#zero").waypoint(function(direction) {
-                $("#downarrowlink").attr("href", "#one");
-            });
+          $("#one").waypoint(function(direction) {
+              $("#downarrowlink").attr("href", "#two");
+							$("header h1").css("display", "inline-block");
+          });
 
-            $("#one").waypoint(function(direction) {
-                $("#downarrowlink").attr("href", "#two");
-            });
+          $("#two").waypoint(function(direction) {
+              $("#downarrowlink").attr("href", "#three");
+							$("header h1").css("display", "inline-block");
+          });
 
-            $("#two").waypoint(function(direction) {
-                $("#downarrowlink").attr("href", "#three");
-            });
+          $("#three").waypoint(function(direction) {
+              $("#downarrowlink").attr("href", "#four");
+							$("header h1").css("display", "inline-block");
+          });
 
-            $("#three").waypoint(function(direction) {
-                $("#downarrowlink").attr("href", "#four");
-            });
+          $("#four").waypoint(function(direction) {
+              $("#downarrowlink").attr("href", "#five");
+							$("header h1").css("display", "inline-block");
+          });
+					
+          $("#five").waypoint(function(direction) {
+              $("#downarrowlink").attr("href", "#final");
+							$("header h1").css("display", "inline-block");
+          });
+					
+					$(".final").waypoint(function(direction) {
+						$("header h1").css("display", "none");
+					});
+					
+      });
+			
+      $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-            $("#four").waypoint(function(direction) {
-                $("#downarrowlink").attr("href", "#five");
-            });
-        });
-    </script>
-
-    <script>
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              if (target.length) {
+                  $('html,body').animate({
+                      scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+              }
+          }
+      });
     </script>
 </body>
-
 </html>
