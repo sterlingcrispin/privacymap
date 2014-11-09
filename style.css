@@ -126,6 +126,10 @@ h3 {
 	height:100vh;
 }
 
+.final a{
+	text-decoration: underline;
+	color:blue;
+}
 .phone,.twofactor{
 	text-align: left;
 	float:left;
@@ -133,8 +137,11 @@ h3 {
 	width:45%;
 }
 
-.passwords{
+.app{
 	float:left;
+}
+
+.sources{
 }
 
 .downarrow {
