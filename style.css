@@ -106,10 +106,16 @@ h3 {
 	height:100vh;
 }
 
-.final a{
+.final a {
+	font-weight: bold;
 	text-decoration: underline;
-	color:blue;
+	color: #2499b3;
 }
+
+.final a:hover {
+	color: #81CFE0;
+}
+
 .phone,.twofactor{
 	text-align: left;
 	float:left;
@@ -120,11 +126,6 @@ h3 {
 .app{
 	float:left;
 	width: 100%;
-}
-
-.app ul, li {
-	list-style: none;
-	margin-left: 0;
 }
 
 .downarrow {
