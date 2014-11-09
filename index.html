@@ -5,22 +5,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>The State of Privacy</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-    <!-- Animate.css wow -->
-
-    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+ 		<link rel="stylesheet" href="animate.css">
+	  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div>
 			<header id="#">
-            <h1><strong>The State of Privacy</strong></h1>
-            <br/>
-			<a href="https://twitter.com/share" class="twitter-share-button" data-via="jbcnn">Tweet</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        </header>
+      	<h1><strong>The State of Privacy</strong></h1>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-via="jbcnn">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+       </header>
 
         <section id="zero">
             <div class="content">
@@ -151,7 +148,7 @@
                         <br/>
                         <a href="https://www.facebook.com/settings?tab=security">Facebook</a>, called “login approvals”
                         <br/>
-                        <a href="https://twitter.com/settings/security">Twitter</a>, called “login verivication”
+                        <a href="https://twitter.com/settings/security">Twitter</a>, called “login verification”
                         <br/>
                         <a href="https://www.dropbox.com/account/security">Dropbox</a>
                         <br/>
@@ -185,81 +182,20 @@
 					<a href="http://www.pewinternet.org/2013/09/05/anonymity-privacy-and-security-online/">68% of internet users believe current laws are not good enough in protecting people’s privacy online.</a>
 					<br/>
 	                <a href="http://www.theatlantic.com/politics/archive/2014/10/congress-still-has-now-idea-how-much-the-nsa-spies-on-americans/382114/">Congress still has no idea how many Americans the NSA has spied on.</a>
+<<<<<<< HEAD
 
 				</div>
 								
+=======
+								</div>	
+>>>>>>> 7ce052bb36ff792cf381d618242aa2e02776e3e8
             </div>
         </section>
-
-
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
     <script src="waypoints/waypoints.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.0.2/wow.min.js"></script>
-
-    <script>
-			new WOW().init();
-			
-      $(function() {
-          $("#zero").waypoint(function(direction) {
-              $("#downarrowlink").attr("href", "#one");
-							$("header h1").css("display", "inline-block");
-							$(".downarrow").css("display", "block");
-          });
-
-          $("#one").waypoint(function(direction) {
-              $("#downarrowlink").attr("href", "#two");
-							$("header h1").css("display", "inline-block");
-							$(".downarrow").css("display", "block");
-          });
-
-          $("#two").waypoint(function(direction) {
-              $("#downarrowlink").attr("href", "#three");
-							$("header h1").css("display", "inline-block");
-							$(".downarrow").css("display", "block");
-          });
-
-          $("#three").waypoint(function(direction) {
-              $("#downarrowlink").attr("href", "#four");
-							$("header h1").css("display", "inline-block");
-							$(".downarrow").css("display", "block");
-          });
-
-          $("#four").waypoint(function(direction) {
-              $("#downarrowlink").attr("href", "#five");
-							$("header h1").css("display", "inline-block");
-							$(".downarrow").css("display", "block");
-          });
-					
-          $("#five").waypoint(function(direction) {
-              $("#downarrowlink").attr("href", "#final");
-							$("header h1").css("display", "inline-block");
-							$(".downarrow").css("display", "block");
-          });
-					
-					$(".final").waypoint(function(direction) {
-						$("header h1").css("display", "none");
-						$(".downarrow").css("display", "none");
-					});
-					
-      });
-			
-      $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-              if (target.length) {
-                  $('html,body').animate({
-                      scrollTop: target.offset().top
-                  }, 1000);
-                  return false;
-              }
-          }
-      });
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
