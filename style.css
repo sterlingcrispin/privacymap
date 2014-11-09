@@ -119,6 +119,12 @@ h3 {
 
 .app{
 	float:left;
+	width: 100%;
+}
+
+.app ul, li {
+	list-style: none;
+	margin-left: 0;
 }
 
 .downarrow {
