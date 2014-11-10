@@ -177,11 +177,11 @@ a:hover {
 
 @media(max-width: 762px) {
 	h1 {
-		font-size: 2em;
+		font-size: 1em;
 	}
 	
 	h2, h3 {
-		font-size: 1.5em !important;
+		font-size: 1em !important;
 	}
 	
 	.phone, .twofactor, .app{
