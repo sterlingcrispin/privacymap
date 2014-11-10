@@ -15,11 +15,13 @@ body {
 	z-index: -1;
 }
 
-section:nth-of-type(1) {
+section {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	display: table;
-	
+}
+
+section:nth-of-type(1) {
 	background: url("map1.svg") fixed center center no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
@@ -28,10 +30,6 @@ section:nth-of-type(1) {
 }
 
 section:nth-of-type(2) {
-	width: 100%;
-	height: 100vh;
-	display: table;
-	
 	background: url("map2.svg") fixed center center no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
@@ -40,10 +38,6 @@ section:nth-of-type(2) {
 }
 
 section:nth-of-type(3) {
-	width: 100%;
-	height: 100vh;
-	display: table;
-	
 	background: url("map3.svg") fixed center center no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
@@ -52,10 +46,6 @@ section:nth-of-type(3) {
 }
 
 section:nth-of-type(4) {
-	width: 100%;
-	height: 100vh;
-	display: table;
-	
 	background: url("map4.svg") fixed center center no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
@@ -64,10 +54,6 @@ section:nth-of-type(4) {
 }
 
 section:nth-of-type(5) {
-	width: 100%;
-	height: 100vh;
-	display: table;
-	
 	background: url("map5.svg") fixed center center no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
@@ -76,10 +62,6 @@ section:nth-of-type(5) {
 }
 
 section:nth-of-type(6) {
-	width: 100%;
-	height: 100vh;
-	display: table;
-	
 	background: url("map6.svg") fixed center center no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
@@ -102,6 +84,7 @@ header {
 h1 {
 	font-size: 3em;
 	font-weight: 300;
+	margin-bottom: 0;
 }
 
 h2 {
@@ -113,11 +96,24 @@ h3 {
 	margin: 0;
 }
 
+.statetext{
+	font-size:1.2em;
+}
 .final{
 	background-color:white;
 	opacity:0.8;
 	padding:10%;
 	height:100vh;
+}
+
+.final a {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #2499b3;
+}
+
+.final a:hover {
+	color: #81CFE0;
 }
 
 .phone,.twofactor{
@@ -127,8 +123,9 @@ h3 {
 	width:45%;
 }
 
-.passwords{
+.app{
 	float:left;
+	width: 100%;
 }
 
 .downarrow {
@@ -136,6 +133,7 @@ h3 {
 	right: 0;
 	position: fixed;
 	bottom: 0;
+	z-index: 1;
 }
 
 a {
@@ -147,8 +145,6 @@ a:hover {
 	text-decoration: underline;
 	color: black;
 }
-
-
 
 @media(min-width: 763px) {
 	.content {
@@ -164,5 +160,9 @@ a:hover {
 	
 	h2, h3 {
 		font-size: 1.5em !important;
+	}
+	
+	.phone, .twofactor, .app{
+		width:100%;
 	}
 }
