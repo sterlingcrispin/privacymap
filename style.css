@@ -184,3 +184,13 @@ a:hover {
 		width:100%;
 	}
 }
+
+@media(max-width: 640px) {
+	body {
+		font-size: 0.5em !important;
+	}
+	
+	.phone, .twofactor, .app{
+		width:100%;
+	}
+}
