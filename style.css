@@ -169,6 +169,10 @@ a:hover {
 		padding-left: 12em;
 		padding-right: 12em;
 	}
+	
+	.mobilemap {
+		display: none;
+	}
 }
 
 @media(max-width: 762px) {
@@ -183,14 +187,13 @@ a:hover {
 	.phone, .twofactor, .app{
 		width:100%;
 	}
-}
-
-@media(max-width: 640px) {
-	body {
-		font-size: 0.5em !important;
+	
+	.section {
+		background: none;
 	}
 	
-	.phone, .twofactor, .app{
-		width:100%;
+	.mobilemap {
+		display: block;
+		width: 100% !important;
 	}
 }
