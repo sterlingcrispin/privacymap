@@ -1,9 +1,18 @@
 new WOW().init();
 
 var thehight = $(window).height();
-$(".section").css("height", thehight);
-$(".map").css("height", thehight);
-$(".final").css("height", thehight);
+var thewidth = $(window).width();
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+} else {
+    $(".section").css("height", thehight);
+    $(".map").css("height", thehight);
+    $(".final").css("height", thehight);
+}
+
+
+
 
 
 
