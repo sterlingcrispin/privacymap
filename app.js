@@ -11,9 +11,24 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     $(".final").css("height", thehight);
 }
 
+var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
 
+if(is_chrome){
 
+    $(".slideOne").css("background-image", "url(map1.svg)"); 
+    $(".slideOne").css("background-attachment", "fixed"); 
+    $(".slideTwo").css("background-image", "url(map2.svg)"); 
+    $(".slideTwo").css("background-attachment", "fixed"); 
+    $(".slideThree").css("background-image", "url(map3.svg)"); 
+    $(".slideThree").css("background-attachment", "fixed"); 
+    $(".slideFour").css("background-image", "url(map4.svg)"); 
+    $(".slideFour").css("background-attachment", "fixed"); 
+    $(".slideFive").css("background-image", "url(map5.svg)"); 
+    $(".slideFive").css("background-attachment", "fixed"); 
+    $(".slideSix").css("background-image", "url(map6.svg)"); 
+    $(".slideSix").css("background-attachment", "fixed"); 
 
+}
 
 
 $(function() {
