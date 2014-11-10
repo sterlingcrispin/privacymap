@@ -1,5 +1,12 @@
 new WOW().init();
 
+<<<<<<< HEAD
+var thehight = $(window).height();
+$("section").css("height", thehight);
+
+
+=======
+>>>>>>> 2df30a8cdbdde694a3b4707b82ca26dc8e66f98b
 $(function() {
     $("#zero").waypoint(function(direction) {
         $("#downarrowlink").attr("href", "#one");
