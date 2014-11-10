@@ -1,7 +1,9 @@
 new WOW().init();
 
 var thehight = $(window).height();
-$("section").css("height", thehight);
+$(".section").css("height", thehight);
+$(".map").css("height", thehight);
+$(".final").css("height", thehight);
 
 
 
