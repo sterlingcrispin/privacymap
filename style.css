@@ -23,6 +23,9 @@ section {
 
 section:nth-of-type(1) {
 	background: url("map1.svg") fixed center center no-repeat;
+	background-image: inline-image("map1.svg");
+	background-size: auto;
+	background-repeat: no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -31,6 +34,9 @@ section:nth-of-type(1) {
 
 section:nth-of-type(2) {
 	background: url("map2.svg") fixed center center no-repeat;
+	background-image: inline-image("map1.svg");
+	background-size: auto;
+	background-repeat: no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -39,6 +45,9 @@ section:nth-of-type(2) {
 
 section:nth-of-type(3) {
 	background: url("map3.svg") fixed center center no-repeat;
+	background-image: inline-image("map1.svg");
+	background-size: auto;
+	background-repeat: no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -47,6 +56,9 @@ section:nth-of-type(3) {
 
 section:nth-of-type(4) {
 	background: url("map4.svg") fixed center center no-repeat;
+	background-image: inline-image("map1.svg");
+	background-size: auto;
+	background-repeat: no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -55,6 +67,9 @@ section:nth-of-type(4) {
 
 section:nth-of-type(5) {
 	background: url("map5.svg") fixed center center no-repeat;
+	background-image: inline-image("map1.svg");
+	background-size: auto;
+	background-repeat: no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -63,6 +78,9 @@ section:nth-of-type(5) {
 
 section:nth-of-type(6) {
 	background: url("map6.svg") fixed center center no-repeat;
+	background-image: inline-image("map1.svg");
+	background-size: auto;
+	background-repeat: no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
