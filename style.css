@@ -147,6 +147,7 @@ h3 {
 }
 
 .downarrow {
+	background: white;
 	left: 0;
 	right: 0;
 	position: fixed;
@@ -190,6 +191,7 @@ a:hover {
 	
 	.section {
 		background: none;
+		height: 50vh;
 	}
 	
 	.mobilemap {
