@@ -25,7 +25,7 @@ body {
 	background-image: url("map1.png");
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
+	background-attachment: left top;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -36,7 +36,7 @@ body {
 	background-image: url("map2.png");
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
+	background-attachment: left top;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -47,7 +47,7 @@ body {
 	background-image: url("map3.png");
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
+	background-attachment: left top;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -58,7 +58,7 @@ body {
 	background-image: url("map4.png");
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
+	background-attachment: left top;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -69,7 +69,7 @@ body {
 	background-image: url("map5.png");
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
+	background-attachment: left top;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -80,7 +80,7 @@ body {
 	background-image: url("map6.png");
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
+	background-attachment: left top;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
