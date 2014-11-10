@@ -21,7 +21,7 @@ section {
 	display: table;
 }
 
-section:nth-of-type(1) {
+/*section:nth-of-type(1)*/ .slideOne {
 	background-image: url("map1.png");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -32,7 +32,7 @@ section:nth-of-type(1) {
 	background-size: contain;
 }
 
-section:nth-of-type(2) {
+/*section:nth-of-type(2)*/ .slideTwo {
 	background-image: url("map2.png");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -43,7 +43,7 @@ section:nth-of-type(2) {
 	background-size: contain;
 }
 
-section:nth-of-type(3) {
+/*section:nth-of-type(3)*/ .slideThree {
 	background-image: url("map3.png");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -54,7 +54,7 @@ section:nth-of-type(3) {
 	background-size: contain;
 }
 
-section:nth-of-type(4) {
+/*section:nth-of-type(4)*/ .slideFour {
 	background-image: url("map4.png");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -65,7 +65,7 @@ section:nth-of-type(4) {
 	background-size: contain;
 }
 
-section:nth-of-type(5) {
+/*section:nth-of-type(5)*/ .slideFive {
 	background-image: url("map5.png");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -76,7 +76,7 @@ section:nth-of-type(5) {
 	background-size: contain;
 }
 
-section:nth-of-type(6) {
+/*section:nth-of-type(6)*/ .slideSix {
 	background-image: url("map6.png");
 	background-repeat: no-repeat;
 	background-position: center center;
